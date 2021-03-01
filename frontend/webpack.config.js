@@ -1,5 +1,5 @@
 const webpack = require("webpack")
-const ExractTextPlugin = require("extrat-text-webpack-plugin")
+const ExractTextPlugin = require("extract-text-webpack-plugin")
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 module.exports = {
@@ -9,7 +9,7 @@ module.exports = {
         filename: "./app.js"
     },
     devServer: {
-        port: 8000,
+        port: 8080,
         contentBase: "./public",
     },
     resolve: {
